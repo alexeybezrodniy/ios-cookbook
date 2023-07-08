@@ -14,15 +14,12 @@ We use [GitHub](https://github.com) and [BitBucket](https://bitbucket.org/produc
 
 In our workflow we have several branches:
 
-- `master` that always contains latest production code from AppStore;
-- `develop` that is used for staging purposes and should be always buildable;
-- `feature/*` branches. For every fix or feature you should create a separate branch. When you are done, create a Pull Request to the `develop`. There are some naming variations that you are free to use, like `fix/*`, `refactor/*`.
+- `main` that always contains latest production code from AppStore;
+- `feature/*` branches. For every fix or feature you should create a separate branch. When you are done, create a Pull Request to the `main`. There are some naming variations that you are free to use, like `fix/*`, `refactor/*`.
 
 ### Merging
 
-We use Pull Requests to merge any change to the `develop` or `master` branch. Sometimes it's ok to push a hotfix directly into the `develop` when the sky is falling, otherwise, please, use Pull Requests. This rule enforces [collective code ownership](https://martinfowler.com/bliki/CodeOwnership.html).
-
-Don't forget to wait till [CI](3-ci.md) is green before merging the PR.
+We use Pull Requests to merge any change to the `main` branch. 
 
 ## Code Review
 
